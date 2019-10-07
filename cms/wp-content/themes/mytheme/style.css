@@ -1,0 +1,64 @@
+/* Theme Name: customtheme
+Author       : Nhóm C
+Version      : 1.0 */
+body {
+    font-family: Arial, sans-serif;
+    font-size  : 16px;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+div.container {
+    max-width: 960px;
+    margin   : 0 auto;
+}
+
+article.post {
+    border-bottom: 4px dashed #ecf0f1;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+.site-header {
+    border-bottom: 3px solid #ecf0f1;
+}
+
+.site-footer {
+    border-top: 3px solid #ecf0f1;
+}
+
+#menu {
+    background: orangered;
+    color     : #fff;
+}
+
+#menu ul li {
+
+    margin: 0;
+
+    padding   : 0;
+    text-align: center;
+
+    display: inline;
+}
+
+#menu li a {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color          : #fff;
+    padding        : 0 15px;
+    border-right   : 1px solid #777;
+    text-transform : uppercase;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: black;
+}

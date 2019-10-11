@@ -1,48 +1,77 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html lang="en">
+
 <head>
-   <link rel="stylesheet" href="/wp-content/themes/mytheme/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="/wp-content/themes/mytheme/css/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
-   <script src="/wp-content/themes/mytheme/css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
- <meta charset="<?php bloginfo( 'charset' ); ?>">
- <title><?php bloginfo( 'sadsadasdsad' ); ?></title>
-<?php wp_head() ?>
-</head>
-<body
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<?php body_class(); ?>>
-<div class="container">
- <nav class="navbar navbar-expand-sm navbar-light bg-light">
-     <a class="navbar-brand" href="#">Navbar</a>
-     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-         aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="collapsibleNavId">
-         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-             <li class="nav-item active">
-                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-             </li>
-             <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                     <a class="dropdown-item" href="#">Action 1</a>
-                     <a class="dropdown-item" href="#">Action 2</a>
-                 </div>
-             </li>
-         </ul>
-         <form class="form-inline my-2 my-lg-0">
-             <input class="form-control mr-sm-2" type="text" placeholder="Search">
-             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-         </form>
-     </div>
- </nav>
+  <title>Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="wp-content/themes/myTheme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="wp-content/themes/myTheme/css/styles.css" rel="stylesheet">
+  <!-- Bootstrap dropdown -->
+  <script src="wp-content/themes/myTheme/vendor/bootstrap/vendor/jquery/jquery.min.js"></script>
+  <script src="wp-content/themes/myTheme/vendor/bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
 </head>
 
- 
- </body>
- </html>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Anh Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Trang chủ
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Giới thiệu</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Áo khoác</a>
+              <a class="dropdown-item" href="#">Áo thun</a>
+              <a class="dropdown-item" href="#">Áo sơ mi</a>
+            </div>
+          </li>
+          <!-- <div class="nav-item dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Text Link</a>
+            </div>
+          </div> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin tức</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
